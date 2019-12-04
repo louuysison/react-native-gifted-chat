@@ -489,7 +489,6 @@ export default class Bubble<
             {...this.props.touchableProps}
           >
             <View>
-              {this.renderBubbleContent()}
               <View
                 style={[
                   styles[position].bottom,
@@ -500,6 +499,7 @@ export default class Bubble<
                 {this.renderTime()}
                 {this.renderTicks()}
               </View>
+              {this.renderBubbleContent()}
             </View>
           </TouchableWithoutFeedback>
         </View>
